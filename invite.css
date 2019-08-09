@@ -1,0 +1,32 @@
+body {
+	background-color: #282b30;
+	font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+	text-align:center;
+}
+
+h1 {
+	color: #fff;
+	text-align: center;
+}
+
+iframe {
+	height: 79vh;
+	width: 100%;
+}
+
+a img {
+	border-radius: 50%;
+	border: 3px solid #aaa;
+	cursor: pointer;
+	height: 48px;
+	width: 48px;
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+a img:hover {
+	border: 3px solid #0af;
+}
