@@ -6,10 +6,22 @@
 </head>
 <body>
 <h1>Pick doki to invite!</h1>
-<a href="https://discordapp.com/oauth2/authorize?client_id=436351740787294208&scope=bot&permissions=11336"><img src="https://cdn.discordapp.com/avatars/436351740787294208/278bfb0139e43ed364fa94f9bd77991f.png"/></a>
-<a href="https://discordapp.com/oauth2/authorize?client_id=425696108455657472&permissions=8&scope=bot"><img src="https://cdn.discordapp.com/avatars/425696108455657472/bcb5d91e765afb4c22267459a45d3b9b.png"/></a>
-<a href="https://discordapp.com/oauth2/authorize?client_id=436350586670153730&permissions=8&scope=bot"><img src="https://cdn.discordapp.com/avatars/436350586670153730/e3b79e8e60e9f574e6fae263e9a8a5b9.png"/></a>
-<a href="https://discordapp.com/oauth2/authorize?client_id=433834936450023424&permissions=8&scope=bot"><img src="https://cdn.discordapp.com/avatars/433834936450023424/58dbb73bda7ac7b6a6e571892514435d.png"/></a>
-<a href="https://discordapp.com/oauth2/authorize?client_id=596407346176065552&scope=bot&permissions=1275182080"><img src="https://cdn.discordapp.com/avatars/596407346176065552/54281fb0901aa92258e042a402038bec.png"/></a>
+<a href="https://discordapp.com/oauth2/authorize?client_id=436351740787294208&scope=bot&permissions=11336"><img src="https://cdn.discordapp.com/avatars/436351740787294208/278bfb0139e43ed364fa94f9bd77991f.png" onmouseover="hoverDoki('Monika');" onmouseleave="leaveDoki();"/></a>
+<a href="https://discordapp.com/oauth2/authorize?client_id=425696108455657472&permissions=8&scope=bot"><img src="https://cdn.discordapp.com/avatars/425696108455657472/bcb5d91e765afb4c22267459a45d3b9b.png" onmouseover="hoverDoki('Sayori');" onmouseleave="leaveDoki();"/></a>
+<a href="https://discordapp.com/oauth2/authorize?client_id=436350586670153730&permissions=8&scope=bot"><img src="https://cdn.discordapp.com/avatars/436350586670153730/e3b79e8e60e9f574e6fae263e9a8a5b9.png" onmouseover="hoverDoki('Yuri');" onmouseleave="leaveDoki();"/></a>
+<a href="https://discordapp.com/oauth2/authorize?client_id=433834936450023424&permissions=8&scope=bot"><img src="https://cdn.discordapp.com/avatars/433834936450023424/58dbb73bda7ac7b6a6e571892514435d.png" onmouseover="hoverDoki('Natsuki');" onmouseleave="leaveDoki();"/></a>
+<a href="https://discordapp.com/oauth2/authorize?client_id=596407346176065552&scope=bot&permissions=1275182080"><img src="https://cdn.discordapp.com/avatars/596407346176065552/54281fb0901aa92258e042a402038bec.png" onmouseover="hoverDoki('MC');" onmouseleave="leaveDoki();"/></a>
+<h1 id="doki"></h1>
+<script>
+function hoverDoki(doki) {
+	document.getElementById("doki").innerHTML = doki;
+	document.body.style.backgroundImage = "url('images/" + doki.toLowerCase() + ".png')";
+}
+
+function leaveDoki() {
+	document.getElementById("doki").innerHTML = "";
+	document.body.style.backgroundImage = "none";
+}
+</script>
 </body>
 </html>
