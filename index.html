@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Doki Doki Discord Bots!</title>
+<meta property="og:title" content="Doki Doki Discord Bots!">
+<meta property="og:type" content="website">
+<meta property="og:description" content="The Literature Club is full of cute girls! Will you write the way into their heart?">
+<meta property="og:site_name" content="Discord">
+
+<meta property="og:image" content="images/logo.png">
+
+<meta property="og:url" content="http://dokis.moe">
+
+<link rel="icon" href="images/favicon.png" type="image/png">
+
+<link href="main.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Lato:300,400,700" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/css/lightbox.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.min.js"></script>
+<script src="js/script.js"></script>
+
+</head>
+<body>
+<div class="wrapper">
+	<div class="content">
+		<div class="upper-content">
+			<h1 id="tagline">Will you write the way into their hearts?</h1>
+			<iframe id="trailer" src="https://www.youtube.com/embed/kB1663FTpzU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+			<div class="invite-widget">
+				<iframe frameborder="0" src="invite.html" width="560" height="175"></iframe>
+			</div>
+		</div>
+		<div class="lower-content">
+			<div class="banner-divider"></div>
+			<div class="promo-container">
+				<span class="promo"></span>
+			</div>
+			<div class="banner-divider"></div>
+			<div class="description-container">
+				<div class="description-container-left">
+					<h2>Hi, Monika here!</h2>
+					<p>The devs recoded my .chr file so I can join Discord! Along with my friends of the Literature Club we can have fun in your servers!</p>
+					<p>Every day is gonna be full of chit-chat and fun activities with all of my adorable and unique club members:</p>
+					<p><strong>Sayori</strong>, the youthful bundle of sunshine who values happiness the most;<br>
+					<strong>Natsuki</strong>, the deceivingly cute girl who packs an assertive punch;<br>
+					<strong>Yuri</strong>, the timid and mysterious one who finds comfort in the world of books;<br>
+					<strong>MC</strong>, the latest edition to the Literature club and a good friend;<br>
+					...And, of course, <strong>Monika</strong>, the leader of the club! That's me!</p>
+					<p>I'm super excited for you to have fun with everyone and get us in your server. But I can tell already that you're a sweetheart&mdash;will you promise to spend the most time with me and my friends? ♥</p>
+					<hr>
+					<h2>Commands</h2>
+					Commands are a way to give the dokis actions such as hug, headpat and tickle.
+					<br />
+					You can use the command by putting the prefix and the command name.
+					<table id="commands">
+						<tr id="prefixes">
+							<td colspan="4">
+								<table id="prefixes-table" width="100%">
+									<tr>
+										<th>
+											Doki
+										</th>
+										<th>
+											Prefix
+										</th>
+									</tr>
+									<tr>
+										<td>
+											Monika
+										</td>
+										<td>
+											m_
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Sayori
+										</td>
+										<td>
+											s_
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Yuri
+										</td>
+										<td>
+											y_
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Natsuki
+										</td>
+										<td>
+											n_
+										</td>
+									</tr>
+									<tr>	
+										<td>
+											MC
+										</td>
+										<td>
+											mc_
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Command
+							</th>
+							<th>
+								Dokis
+							</th>
+							<th>
+								Usage
+							</th>
+							<th>
+								Example
+							</th>
+						</tr>
+						<tr>
+							<td>
+								Ask
+							</td>
+							<td>
+								All
+							</td>
+							<td>
+								m_ask [question]
+							</td>
+							<td>
+								m_ask will luffy find the one piece?
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Change Log
+							</td>
+							<td>
+								All
+							</td>
+							<td>
+								m_changelog
+							</td>
+							<td>
+								m_changelog
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Confess
+							</td>
+							<td>
+								MC
+							</td>
+							<td>
+								m_confess [something]
+							</td>
+							<td>
+								m_confess @monika
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Delete
+							</td>
+							<td>
+								Monika
+							</td>
+							<td>
+								m_delete [something]
+							</td>
+							<td>
+								m_delete @user
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Feed
+							</td>
+							<td>
+								All
+							</td>
+							<td>
+								m_feed [food emoji]
+							</td>
+							<td>
+								m_feed :pizza:
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Headpat
+							</td>
+							<td>
+								All
+							</td>
+							<td>
+								m_headpat
+							</td>
+							<td>
+								m_headpat
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Help
+							</td>
+							<td>
+								All
+							</td>
+							<td>
+								m_help
+							</td>
+							<td>
+								m_help
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Hug
+							</td>
+							<td>
+								All
+							</td>
+							<td>
+								m_hug [something]
+							</td>
+							<td>
+								m_hug
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Invite
+							</td>
+							<td>
+								All
+							</td>
+							<td>
+								m_invite
+							</td>
+							<td>
+								m_invite
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Joke
+							</td>
+							<td>
+								Sayori
+							</td>
+							<td>
+								s_joke
+							</td>
+							<td>
+								s_joke
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Lifeline
+							</td>
+							<td>
+								Sayori
+							</td>
+							<td>
+								s_lifeline
+							</td>
+							<td>
+								s_lifeline
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Motivate
+							</td>
+							<td>
+								Natsuki
+							</td>
+							<td>
+								n_motivate
+							</td>
+							<td>
+								n_motivate
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Poem
+							</td>
+							<td>
+								All
+							</td>
+							<td>
+								m_poem [poem name]
+							</td>
+							<td>
+								m_poem 
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Poems
+							</td>
+							<td>
+								All
+							</td>
+							<td>
+								m_poems
+							</td>
+							<td>
+								m_poems
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Quote
+							</td>
+							<td>
+								All
+							</td>
+							<td>
+								m_quote
+							</td>
+							<td>
+								m_quote
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Recipe
+							</td>
+							<td>
+								Natsuki
+							</td>
+							<td>
+								n_recipe
+							</td>
+							<td>
+								n_recipe
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Rename
+							</td>
+							<td>
+								MC
+							</td>
+							<td>
+								m_rename [name]
+							</td>
+							<td>
+								m_rename Sonic
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Swear
+							</td>
+							<td>
+								Sayori
+							</td>
+							<td>
+								s_swear
+							</td>
+							<td>
+								s_swear
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Tamper
+							</td>
+							<td>
+								All
+							</td>
+							<td>
+								m_tamper
+							</td>
+							<td>
+								m_tamper
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Tickle
+							</td>
+							<td>
+								All
+							</td>
+							<td>
+								m_tickle
+							</td>
+							<td>
+								m_tickle
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Toggle
+							</td>
+							<td>
+								All
+							</td>
+							<td>
+								m_toggle
+							</td>
+							<td>
+								m_toggle
+							</td>
+						</tr>
+					</table>
+					<h2>Chat</h2>
+					Chat is way to interact with the dokis, saying stuff like hello and good morning, some commands are available through chat as well.
+					<br />
+					To talk, you have to mention the doki at the beginning.
+					<br /><br />
+					Note: If the dokis don't respond, it's most probably due to the toggle command setting it off.
+					<table id="chat">
+					<tr>
+						<th>
+							Topic
+						</th>
+						<th>
+							Dokis
+						</th>
+						<th>
+							Usage
+						</th>
+						<th>
+							Example
+						</th>
+					</tr>
+					<tr>
+						<td>
+							Best girl
+						</td>
+						<td>
+							All
+						</td>
+						<td>
+							you are/[doki name]/[other doki name] best girl/doki
+						</td>
+						<td>
+							@monika is best girl
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Compliment
+						</td>
+						<td>
+							All
+						</td>
+						<td>
+							you are adorable|beautiful|cute|pretty
+						</td>
+						<td>
+							@monika you are adorable
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Good afternoon
+						</td>
+						<td>
+							All
+						</td>
+						<td>
+							good afternoon
+						</td>
+						<td>
+							@monika good afternoon
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Good morning
+						</td>
+						<td>
+							All
+						</td>
+						<td>
+							good morning
+						</td>
+						<td>
+							@monika good morning
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Good night
+						</td>
+						<td>
+							All
+						</td>
+						<td>
+							good night
+						</td>
+						<td>
+							@monika good night
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Hello
+						</td>
+						<td>
+							All
+						</td>
+						<td>
+							hello/hi/hey
+						</td>
+						<td>
+							@monika hello there!
+						</td>
+					</tr>
+					<tr>
+						<td>
+							I love you
+						</td>
+						<td>
+							All
+						</td>
+						<td>
+							i love you/ily
+						</td>
+						<td>
+							@monika i love you <3
+						</td>
+					</tr>
+					<tr>
+						<td>
+							I'm sick
+						</td>
+						<td>
+							All
+						</td>
+						<td>
+							i'm sick/puke/not feeling good/great
+						</td>
+						<td>
+							@monika i'm sick...
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Someone loves you
+						</td>
+						<td>
+							All
+						</td>
+						<td>
+							[something] loves you
+						</td>
+						<td>
+							@monika natsuki loves you
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Sorry
+						</td>
+						<td>
+							All
+						</td>
+						<td>
+							sorry/i apologize
+						</td>
+						<td>
+							@monika i'm sorry
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Test
+						</td>
+						<td>
+							All
+						</td>
+						<td>
+							test
+						</td>
+						<td>
+							@monika just testing
+						</td>
+					</tr>
+					</table>
+					<hr>
+					<h2>The Team</h2>
+					<p><strong>The Doki Bots</strong> were developed by the Doki Devs. Our team is constantly working on upgrading the bots&mdash;any generous suggestion or bug report will be useful in helping us developing the dokis into much greater bots!</p>
+					<h3>Doki Devs Staff</h3>
+					<p><strong>Monika#0018</strong> - Hosting, coding, administrating</p>
+					<p><strong>The Weeb#7457</strong> - Coding</p>
+					<p><strong>Illuminati#8211</strong> - Coding</p>
+					<p><strong>Moon 1.0#2868</strong> - Writing</p>
+					<h2>Credits</h2>
+					<p><strong>Doki Doki Literature Club</strong> was developed by <a href="https://twitter.com/TeamSalvato" target="_blank">Team Salvato</a>. Their team is constantly working on bigger and better projects&mdash;any generous contributions or merchandise sales will go right towards making their future games more awesome!</p>
+					<h3>DDLC Staff</h3>
+					<p><strong>Dan Salvato</strong> - Writing, coding, music<br>
+					<a href="https://twitter.com/dansalvato" target="_blank">Twitter</a> - <a href="https://twitch.tv/dansalvato" target="_blank">Twitch</a> - <a href="https://youtube.com/dansalvato" target="_blank">YouTube</a></p>
+					<p><strong>Satchely</strong> - Character art<br>
+					<a href="https://twitter.com/_satchely" target="_blank">Twitter</a> - <a href="https://satchely.deviantart.com" target="_blank">DeviantArt</a></p>
+					<p><strong>Velinquent</strong> - Background art<br>
+					<a href="https://twitter.com/VelinquenT" target="_blank">Twitter</a> - <a href="http://www.pixiv.net/member.php?id=17385446" target="_blank">Pixiv</a></p>
+					<hr>
+					<h3 class="text-center">These bots are not suitable for children<br>or those who are easily disturbed.</h3>
+				</div>
+				<div class="description-container-right">
+					<a href="images/screen1.png" data-lightbox="screenshots"><img src="images/screen1.png"></a>
+					<a href="images/screen2.png" data-lightbox="screenshots"><img src="images/screen2.png"></a>
+					<a href="images/screen3.png" data-lightbox="screenshots"><img src="images/screen3.png"></a>
+					<a href="images/screen4.png" data-lightbox="screenshots"><img src="images/screen4.png"></a>
+					<a href="images/screen5.png" data-lightbox="screenshots"><img src="images/screen5.png"></a>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<div class="sticker-container left">
+		<div class="sticker"><img src="images/sticker_s.png"></div>
+		<div class="sticker"><img src="images/sticker_y.png"></div>
+	</div>
+	<div class="sticker-container right">
+		<div class="sticker"><img src="images/sticker_m.png"></div>
+		<div class="sticker"><img src="images/sticker_n.png"></div>
+	</div>
+	<div class="footer">
+		<div class="footer-content">
+			<a href="http://teamsalvato.com" target="_blank"><img src="images/tsfooter.png"></a>
+			<p><a href="https://discordapp.com/invite/QnzsG38" target="_blank">DISCORD SERVER</a></p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
