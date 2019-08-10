@@ -11,16 +11,17 @@
 <a href="https://discordapp.com/oauth2/authorize?client_id=436350586670153730&permissions=8&scope=bot"><img src="https://cdn.discordapp.com/avatars/436350586670153730/e3b79e8e60e9f574e6fae263e9a8a5b9.png" onmouseover="hoverDoki('Yuri');" onmouseleave="leaveDoki();"/></a>
 <a href="https://discordapp.com/oauth2/authorize?client_id=433834936450023424&permissions=8&scope=bot"><img src="https://cdn.discordapp.com/avatars/433834936450023424/58dbb73bda7ac7b6a6e571892514435d.png" onmouseover="hoverDoki('Natsuki');" onmouseleave="leaveDoki();"/></a>
 <a href="https://discordapp.com/oauth2/authorize?client_id=596407346176065552&scope=bot&permissions=1275182080"><img src="https://cdn.discordapp.com/avatars/596407346176065552/54281fb0901aa92258e042a402038bec.png" onmouseover="hoverDoki('MC');" onmouseleave="leaveDoki();"/></a>
-<h1 id="doki"></h1>
+<h1 id="dokiName"></h1>
+<img src="" id="doki"></img>
 <script>
 function hoverDoki(doki) {
-	document.getElementById("doki").innerHTML = doki;
-	document.body.style.backgroundImage = "url('images/" + doki.toLowerCase() + ".png')";
+	document.getElementById("dokiName").innerHTML = doki;
+	document.getElementById("doki").src = "images/" + doki.toLowerCase() + ".png";
 }
 
 function leaveDoki() {
-	document.getElementById("doki").innerHTML = "";
-	document.body.style.backgroundImage = "none";
+	document.getElementById("dokiName").innerHTML = "";
+	document.getElementById("doki").src = "";
 }
 </script>
 </body>
