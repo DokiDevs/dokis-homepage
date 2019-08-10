@@ -77,13 +77,13 @@
 									Will you write the way into their hearts?
 								</h3>
 								<div class="button_row">
-									<a href="JavaScript:openInvite();" target="_blank" class="button purchase_popup_btn">
+									<a onclick="JavaScript:openInvite();" target="_blank" class="button purchase_popup_btn">
 										Invite Now
 									</a>
 								</div>
 								<script>
 									function openInvite() {
-										poppedWindow = window.open('links.html','popUpWindow','height=743,width=680,left=620,top=230,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+										poppedWindow = window.open('links.html','popUpWindow','height=743,width=680,left=620,top=230,resizable=no,scrollbars=no,toolbar=no,menubar=no,location=no,directories=no,status=no')
 										try {
 											if (typeof poppedWindow == 'undefined' || !(poppedWindow && poppedWindow.closed) || !(poppedWindow && poppedWindow.test)) {
 												window.open('links.html', '_installDokiBots');
