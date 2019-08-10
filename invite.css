@@ -1,5 +1,9 @@
 body {
 	background-color: #282b30;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom;
+	background-size: 500px;
 	font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
 	text-align:center;
 }
@@ -29,4 +33,11 @@ a img {
 }
 a img:hover {
 	border: 3px solid #0af;
+}
+
+h1#doki {
+	position: fixed;
+	bottom: 450px;
+	text-align: center;
+	width: 100%;
 }
